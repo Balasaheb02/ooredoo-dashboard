@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .header_menu {
+        display: flex;
+        align-items: center;
+
+        .ooredoo_logo {
+            padding: 0 20px;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        a:hover {
+            color: #ed1c24;
+        }
+
+        li > a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+
+          
+
+            span {
+                padding: 5px;
+                font-size: 14px;
+                color: #666;
+            }
+        }
+    }
+
+    .user_profile{
+        .user_logo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 40px;
+                border-radius: 50%;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+main{
+    .genrator_cards{
+        display: flex;
+        .total_genrater_card{
+            border: 1px solid #e6e6e6;
+        }
+    }
+}

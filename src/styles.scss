@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Ooredoo-Heavy";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/ooredoofiles/cs/fonts/Ooredoo-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("/ooredoofiles/cs/fonts/Ooredoo-Heavy.woff") format("woff"),
+    url("/ooredoofiles/cs/fonts/Ooredoo-Heavy.ttf") format("truetype"),
+    url("/ooredoofiles/cs/fonts/Ooredoo-Heavy.svg#Ooredoo-Heavy") format("svg");
+}
+
+
+/* GENERIC ELEMENTS */
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif, Helvetica !important;
+    font-weight: lighter !important;
+}
+
+
