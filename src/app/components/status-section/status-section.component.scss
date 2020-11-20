@@ -1,0 +1,56 @@
+@import "src/assets/partial/color_variables.scss";
+
+.genrator_status_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .genrator_status {
+        display: flex;
+        padding: 10px;
+        .genrator_content {
+            padding: 0 5px;
+            &.status {
+                padding-right: 20px;
+            }
+
+            p {
+                padding-bottom: 5px;
+            }
+
+            .fade_text {
+                color:$text-color-5;
+            }
+
+            .green_text {
+                color:$text-color-6;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .dark_text {
+                color:$text-color-4;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+    .view_button {
+        button {
+            background-color:$background-4;
+            padding: 10px 40px;
+            color: $text-color-1;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.genrator_oprations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 84%;
+}
