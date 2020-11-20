@@ -8,6 +8,9 @@ import { MapComponent } from './map.component';
   declarations: [MapComponent],
   imports: [
     CommonModule
+  ],
+  exports:[
+    MapComponent
   ]
 })
 export class MapModule { }
