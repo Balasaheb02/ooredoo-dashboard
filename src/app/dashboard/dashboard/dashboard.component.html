@@ -1,75 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-</head>
-
-<body>
     <div class="container">
         <header>
-
-            <div class="header_menu">
-                <div class="ooredoo_logo">
-                    <img src="../../../assets/images/logo.png">
-                </div>
-
-                <div class="ooredoo_menu">
-                    <ul>
-                        <li>
-                            <a href="#"> <i class="fas fa-home"></i><span class="icon_home">Dashboard</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-desktop"></i><span class="icon_monitor">Monitoring</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far  fa-chart-bar"></i><span class="icon_monitor">Analytics</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-chart-pie"></i><span class="icon_monitor">Reports</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far fa-bell"></i><span class="icon_monitor">Alarms</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="user_profile">
-                <div class="user_logo">
-                    <img src="../../../assets/images/profile.PNG">
-                    <span>Admin</span>
-                    <div class="menu">
-                        <img src="../../../assets/images/menu.PNG">
-                    </div>
-                </div>
-            </div>
+            <app-top-bar></app-top-bar>  
         </header>
 
         <main>
-            <div class="menu_responsive">
-                <div class="ooredoo_menu_responsive">
-                    <ul>
-                        <li>
-                            <a href="#"> <i class="fas fa-home"></i><span class="icon_home">Dashboard</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-desktop"></i><span class="icon_monitor">Monitoring</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far  fa-chart-bar"></i><span class="icon_monitor">Analytics</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-chart-pie"></i><span class="icon_monitor">Reports</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far fa-bell"></i><span class="icon_monitor">Alarms</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="container_main">
                 <div class="genrator_cards">
                     <div class="total_genrater_card">
@@ -94,9 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="map">
-                    <img width="100%" src="../../../assets/images/map.PNG">
-                </div>
+             <app-map></app-map>
             </div>
 
             <section>
@@ -114,61 +46,7 @@
                         </div>
                     </div>
                     <div class="overflow_handler">
-                        <div class="genrator_oprations" *ngFor="let item of [1, 2, 3, 4]">
-                            <div class="genrator_status_menu">
-                                <div class="genrator_id genrator_status">
-                                    <img width="18px" height="18px" src="../../../assets/images/setting.PNG">
-                                    <div class="genrator_content">
-                                        <p class="fade_text">Generater Id</p>
-                                        <p class="dark_text">NHT87898</p>
-                                    </div>
-                                </div>
-                                <div class="status genrator_status">
-                                    <img width="18px" height="18px" src="../../../assets/images/shield.PNG">
-                                    <div class="genrator_content status">
-                                        <p class="fade_text">Status</p>
-                                        <p class="dark_text">On</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="genrator_status_menu">
-                                <div class="active_alarm genrator_status">
-                                    <img width="18px" height="18px" src="../../../assets/images/setting.PNG">
-                                    <div class="genrator_content">
-                                        <p class="fade_text">Active Alarm</p>
-                                        <p class="green_text">Yes</p>
-                                    </div>
-                                </div>
-                                <div class="running genrator_status">
-                                    <img width="18px" height="22px" src="../../../assets/images/wave.PNG">
-                                    <div class="genrator_content">
-                                        <p class="fade_text">Running</p>
-                                        <p class="dark_text">yes</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="genrator_status_menu">
-                                <div class="last_message genrator_status">
-                                    <img width="18px" height="22px" src="../../../assets/images/message.PNG">
-                                    <div class="genrator_content">
-                                        <p class="fade_text">Last message read</p>
-                                        <p class="dark_text">20th sep 10:05 AM</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="genrator_status_menu">
-                                <div class="fuel_volume genrator_status">
-                                    <img width="18px" height="22px" src="../../../assets/images/drop.PNG">
-                                    <div class="genrator_content">
-                                        <p class="fade_text">Fuel Volume</p>
-                                        <p class="dark_text">30%</p>
-                                    </div>
-                                </div>
-                                <div class="view_button">
-                                    <button>View</button>
-                                </div>
-                            </div>
-                        </div>
+                       <app-status-section></app-status-section>
                     </div>
                 </div>
             </section>
@@ -188,101 +66,7 @@
                 </div>
             </div>
             <div class="tabel_wrapper">
-                <div class="alarm_table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ALARM ID</th>
-                                <th>DATE AND TIME</th>
-                                <th>GENERATOR ID</th>
-                                <th>PARAMETER</th>
-                                <th>VALUE</th>
-                                <th>ALARM TYPE</th>
-                                <th>MANUAL CLOSE</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-1</td>
-                            <td class="value"><img src="../../../assets/images/petrol.PNG"> <span>Fuel level</span></td>
-                            <td>125%</td>
-                            <td><button class="critical_button">
-                                    Critical
-                                </button></td>
-                            <td>
-                                <input type="radio"><span class="manual_close">Active</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-2</td>
-                            <td class="value"><img src="../../../assets/images/engine.PNG"> <span>Engine Speed</span>
-                            </td>
-                            <td>5000 RPM</td>
-                            <td><button class="major_button">
-                                    Major
-                                </button></td>
-                            <td><i class="far fa-bell"></i><span class="manual_close">Cleared</span></td>
-                        </tr>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-3</td>
-                            <td class="value"><img src="../../../assets/images/oil.PNG"> <span>Fuel level</span></td>
-                            <td>125%</td>
-                            <td><button class="minor_button">
-                                    Minor
-                                </button></td>
-                            <td>
-                                <input type="radio"><span class="manual_close">Active</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-1</td>
-                            <td class="value"><img src="../../../assets/images/petrol.PNG"> <span>Fuel level</span></td>
-                            <td>125%</td>
-                            <td><button class="critical_button">
-                                    Critical
-                                </button></td>
-                            <td>
-                                <input type="radio"><span class="manual_close">Active</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-2</td>
-                            <td class="value"><img src="../../../assets/images/engine.PNG"> <span>Engine Speed</span>
-                            </td>
-                            <td>5000 RPM</td>
-                            <td><button class="major_button">
-                                    Major
-                                </button></td>
-                            <td><i class="far fa-bell"></i><span class="manual_close">Cleared</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AI-1</td>
-                            <td>20june 2020 10:00AM</td>
-                            <td>G-3</td>
-                            <td class="value"><img src="../../../assets/images/oil.PNG"> <span>Fuel level</span></td>
-                            <td>125%</td>
-                            <td><button class="minor_button">
-                                    Minor
-                                </button></td>
-                            <td>
-                                <input type="radio"><span class="manual_close">Active</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+               <app-table></app-table>
             </div>
         </div>
     </div>
-</body>
-
-</html>
