@@ -1,1 +1,59 @@
-<p>top-bar works!</p>
+<div class="header_main">
+<div class="header_menu">
+    <div class="ooredoo_logo">
+        <img src="../../../assets/images/logo.png">
+    </div>
+
+    <div class="ooredoo_menu" >
+        <ul class="list">
+            <li>
+                <a href="#"> <i class="fas fa-home icon"></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-desktop icon"></i><span>Monitoring</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far  fa-chart-bar icon"></i><span>Analytics</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-chart-pie icon"></i><span>Reports</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-bell icon"></i><span>Alarms</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="user_profile">
+    <div class="user_logo">
+        <img src="../../../assets/images/profile.PNG">
+        <span>Admin</span>
+        <div class="menu" (click)="showMenu()">
+            <img src="../../../assets/images/menu.PNG">
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="menu_responsive" [ngClass]="isActive ? 'show':'hide'">
+    <div class="ooredoo_menu_responsive">
+        <ul class="list_responsive">
+            <li>
+                <a href="#"> <i class="fas fa-home"></i><span class="icon_home">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-desktop"></i><span class="icon_monitor">Monitoring</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far  fa-chart-bar"></i><span class="icon_monitor">Analytics</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-chart-pie"></i><span class="icon_monitor">Reports</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-bell"></i><span class="icon_monitor">Alarms</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+

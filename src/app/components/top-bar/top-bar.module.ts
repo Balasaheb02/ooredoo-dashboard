@@ -8,6 +8,9 @@ import { TopBarComponent } from './top-bar.component';
   declarations: [TopBarComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TopBarComponent
   ]
 })
 export class TopBarModule { }

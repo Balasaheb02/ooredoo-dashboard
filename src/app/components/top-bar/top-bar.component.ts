@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+   isActive: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
+
+  showMenu() {
+    this.isActive = this.isActive ? false : true;
+}
 
 }
