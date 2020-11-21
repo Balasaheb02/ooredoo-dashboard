@@ -1,72 +1,73 @@
-    <div class="container">
-        <header>
-            <app-top-bar></app-top-bar>  
-        </header>
+<div class="container">
+    <header>
+        <app-top-bar></app-top-bar>
+    </header>
 
-        <main>
-            <div class="container_main">
-                <div class="genrator_cards">
-                    <div class="total_genrater_card">
-                        <img src="../../../assets/images/genrator_logo.PNG">
-                        <div>
-                            <p>TOTAL GENERATER</p>
-                            <p>200</p>
-                        </div>
-                    </div>
-                    <div class="total_genrater_card">
-                        <img src="../../../assets/images/on_logo.PNG">
-                        <div>
-                            <p>ON GENERATER</p>
-                            <p>180</p>
-                        </div>
-                    </div>
-                    <div class="total_genrater_card">
-                        <img src="../../../assets/images/off_genrate_logo.PNG">
-                        <div>
-                            <p>OFF GENERATER</p>
-                            <p>20</p>
-                        </div>
+    <main>
+        <div class="container_main">
+            <div class="genrator_cards">
+                <div class="total_genrater_card">
+                    <img src="../../../assets/images/genrator_logo.PNG">
+                    <div>
+                        <p>TOTAL GENERATER</p>
+                        <p>200</p>
                     </div>
                 </div>
-             <app-map></app-map>
+                <div class="total_genrater_card">
+                    <img src="../../../assets/images/on_logo.PNG">
+                    <div>
+                        <p>ON GENERATER</p>
+                        <p>180</p>
+                    </div>
+                </div>
+                <div class="total_genrater_card">
+                    <img src="../../../assets/images/off_genrate_logo.PNG">
+                    <div>
+                        <p>OFF GENERATER</p>
+                        <p>20</p>
+                    </div>
+                </div>
             </div>
+            <app-map></app-map>
+        </div>
 
-            <section>
-                <div class="section_divider">
-                    <div class="filters">
-                        <div class="search_bar">
-                            <input type="text" placeholder="Search by Generater Id" name="search">
-                            <img src="../../../assets/images/search.PNG">
-                        </div>
-                        <div class="devices_filter">
-                            <div class="device_dropdown">
-                                <p>All Devices</p>
-                                <img src="../../../assets/images/down_arrow.PNG">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overflow_handler">
-                       <app-status-section></app-status-section>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <div class="recent_table">
-            <div class="tabel_title">
-                <h3>Recent alarms</h3>
-                <div class="tabel_download_search">
+        <section>
+            <div class="section_divider">
+                <div class="filters">
                     <div class="search_bar">
-                        <input type="text" placeholder="Search by alarm id" name="search">
+                        <input type="text" placeholder="Search by Generater Id" name="search">
                         <img src="../../../assets/images/search.PNG">
                     </div>
-                    <div class="download_button">
-                        <button> <img height="25px" src="../../../assets/images/download.PNG"> Download</button>
+                    <div class="devices_filter">
+                        <div class="device_dropdown">
+                            <p>All Devices</p>
+                            <img src="../../../assets/images/down_arrow.PNG">
+                        </div>
                     </div>
                 </div>
+                <div class="overflow_handler">
+                    <app-status-section></app-status-section>
+                </div>
             </div>
-            <div class="tabel_wrapper">
-               <app-table></app-table>
+        </section>
+    </main>
+
+    <div class="recent_table">
+        <div class="tabel_title">
+            <h3>Recent alarms</h3>
+            <div class="tabel_download_search">
+                <div class="search_bar">
+                    <input type="text" placeholder="Search by alarm id" name="search">
+                    <img src="../../../assets/images/search.PNG">
+                </div>
+                <div class="download_button">
+                    <button> <img height="25px" src="../../../assets/images/download.PNG"> Download</button>
+                </div>
             </div>
         </div>
+        <div class="tabel_wrapper">
+            <app-table></app-table>
+        </div>
     </div>
+    
+</div>

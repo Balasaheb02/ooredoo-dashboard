@@ -85,3 +85,36 @@
         }
     }
 }
+
+.paginator_main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: $background-2;
+    padding: 10px 12px;
+
+    p{
+        padding: 10px;
+    }
+
+    .paginator_circle{
+      border-radius: 50%;
+      background-color: $background-12; 
+      width: 50px;
+      height: 50px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .paginator_circle:hover{
+        background-color:$background-11;
+        color: $text-color-10;
+    }
+
+    .previous{
+        color:$text-color-11;
+    }
+}
