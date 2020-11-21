@@ -2,7 +2,7 @@
   "name": "ooredoo-template",
   "version": "0.0.0",
   "engines": {
-    "node": "v12.13.1",
+    "node": "12.13.1",
     "npm": "6.14.2"
   },
   "scripts": {
